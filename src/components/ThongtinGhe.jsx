@@ -6,8 +6,8 @@ class ThongtinGhe extends Component {
   render() {
     return (
       <div>
-        <div className='mt-5'>
-          <button className='gheDuocChon'></button><span style={{ fontSize: '30px' }} className='text-light'>Ghế đã đặt</span>
+        <div className='mt-3'>
+          <button className='gheDaDat'></button><span style={{ fontSize: '30px' }} className='text-light'>Ghế đã đặt</span>
           <br />
           <button className='gheDangChon'></button><span style={{ fontSize: '30px' }} className='text-light'>Ghế đang đặt</span>
           <br />
@@ -19,7 +19,7 @@ class ThongtinGhe extends Component {
               <tr className='text-light' style={{ fontSize: '20px' }}>
                 <th>Số ghế</th>
                 <th>Giá</th>
-                <th>X</th>
+                <th>Hủy</th>
               </tr>
             </thead>
             <tbody className='text-warning'>

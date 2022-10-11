@@ -6,22 +6,22 @@ class GheBooking extends Component {
     renderGhe = () => {
         return this.props.hangGhe.danhSachGhe.map((ghe, index) => {
 
-            let cssGhedaDat = ''
+            let GheDaDat = ''
             let disable = false;
             if (ghe.daDat) {
-                cssGhedaDat = 'gheDuocChon'
+                GheDaDat = 'gheDaDat'
                 disable = true
             }
 
-            let cssGheDangDat = '';
+            let gheDangChon = '';
             let indexGheDangDat = this.props.danhSachGheDangDat.findIndex(gheDangdat => gheDangdat.soGhe === ghe.soGhe)
             if (indexGheDangDat !== -1) {
-                cssGheDangDat = 'gheDangChon'
+                gheDangChon = 'gheDangChon'
             }
 
             return <button onClick={() => {
                 this.props.datGhe(ghe)
-            }} disabled={disable} className={`ghe ${cssGhedaDat} ${cssGheDangDat}`} key={index}>
+            }} disabled={disable} className={`ghe ${GheDaDat} ${gheDangChon}`} key={index}>
                 {ghe.soGhe}
             </button>
 
@@ -30,7 +30,7 @@ class GheBooking extends Component {
 
     renderSoHang = () => {
         return this.props.hangGhe.danhSachGhe.map((hang, index) => {
-            return <button className='rowNumber' key={`hang ${index}`}>
+            return <button className='number' key={`hang ${index}`}>
                 {hang.soGhe}
             </button>
         })
@@ -51,7 +51,7 @@ class GheBooking extends Component {
     }
     render() {
         return (
-            <div className='text-light text-left ml-5 mt-3' style={{ fontSize: '20px' }}>
+            <div className='text-light text-left ml-5 mt-2' style={{ fontSize: '15px' }}>
                 {this.renderHangGhe()}
             </div>
         )
