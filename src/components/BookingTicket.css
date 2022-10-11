@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'fontGame';
-    src: url('../font/Pony.ttf');
-}
-
 .bookingMovie{
     font-family: 'fontGame';
 }
@@ -19,7 +14,7 @@
 }
 
 .rowNumber{
-    /* font-size: 25px; */
+
     width: 45px;
     height: 35px;
     background: none;
@@ -46,15 +41,15 @@
     filter: drop-shadow(4px 30px 20px rgba(255, 255, 255, 0.5));
     font-size: 25px;
     color: #fff;
+    
+    margin-left: 75px;
 }
 
 
 .gheDuocChon {
     border: 3px solid orange;
-
     background: orange;
     color: #000;
-
     cursor: no-drop !important;
     border-radius: 5px;
     width: 45px;
