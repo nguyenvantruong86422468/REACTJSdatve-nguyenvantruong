@@ -7,9 +7,9 @@ import data from '../data/danhSachGhe.json';
 export default class BookingTicket extends Component {
   renderdanhsachghe = () => {
 
-    return data.map((hangGhe, index) => {
+    return data.map(( hangGhe, index) => {
       return <div key={index}>
-        <GheBooking hangGhe={hangGhe} />
+        <GheBooking hangGhe={hangGhe} soHang={index}/>
       </div>
     })
   }
