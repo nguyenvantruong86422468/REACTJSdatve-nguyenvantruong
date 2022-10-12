@@ -1,13 +1,13 @@
 export const DatGheAction =(ghe) =>{
     return{
-        type:'DAT_GHE',
+        type:'Dat_Ghe',
         ghe
     }
 }
 
 export const HuyGheAction =(soGhe) =>{
     return{
-        type:'HUY_GHE',
+        type:'Huy_Ghe',
         soGhe
     }
 }
