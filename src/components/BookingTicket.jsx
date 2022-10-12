@@ -8,8 +8,8 @@ export default class BookingTicket extends Component {
   renderdanhsachghe = () => {
 
     return data.map((hangGhe, index) => {
-      return <div>
-        <GheBooking hangGhe={hangGhe} key={index} />
+      return <div key={index}>
+        <GheBooking hangGhe={hangGhe} />
       </div>
     })
   }
