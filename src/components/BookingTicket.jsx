@@ -21,9 +21,9 @@ export default class BookingTicket extends Component {
           <div className='container-fluid'>
             <div className="row">
               <div className=" col-7 text-center">
-                <h1 className='text-warning display-4'>ĐẶT VÉ Xem Phim CEYBERLEARN</h1>
+                <h1 className='text-warning display-4'>ĐẶT VÉ Xem Phim CEYBERLEARN.VN</h1>
                 <div className=' text-warning title'>Màn hình</div>
-                <div className='' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div className='vision' >
                   <div className='screen'></div>
                   {this.renderdanhsachghe()}
                 </div>
