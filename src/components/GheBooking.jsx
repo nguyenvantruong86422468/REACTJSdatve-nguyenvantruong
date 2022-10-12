@@ -51,7 +51,7 @@ class GheBooking extends Component {
     }
     render() {
         return (
-            <div className='text-light text-left ml-4 mt-1' style={{ fontSize: '12px' }}>
+            <div className='text-light text-left ml-5 mt-2' style={{ fontSize: '15px' }}>
                 {this.renderHangGhe()}
             </div>
         )
